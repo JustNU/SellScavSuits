@@ -1,0 +1,276 @@
+{
+    "customization": {
+        "5fc6144b0b735e7b024c76e7": {
+            "Description": "SCAV - Stasik",
+            "Name": "SCAV - Stasik",
+            "ShortName": "SCAV - Stasik"
+        },
+		"5fb5297a0359a84b77066e56": {
+            "Description": "Cultist Warrior 1",
+            "Name": "Cultist Warrior 1",
+            "ShortName": "Cultist Warrior 1"
+        },
+		"5fc614390b735e7b024c76e6": {
+            "Description": "SCAV - Misha",
+            "Name": "SCAV - Misha",
+            "ShortName": "SCAV - Misha"
+        },
+		"5d28b03e86f7747f7e69ab8a": {
+            "Description": "Killa",
+            "Name": "Killa",
+            "ShortName": "Killa"
+        },
+		"5d28afe786f774292668618d": {
+            "Description": "The one and the only - The Cig Scav",
+            "Name": "The one and the only - The Cig Scav",
+            "ShortName": "The one and the only - The Cig Scav"
+        },
+		"5fc614290b735e7b024c76e5": {
+            "Description": "SCAV - Drozd",
+            "Name": "SCAV - Drozd",
+            "ShortName": "SCAV - Drozd"
+        },
+		"5fc613c80b735e7b024c76e2": {
+            "Description": "SCAV - Yarik",
+            "Name": "SCAV - Yarik",
+            "ShortName": "SCAV - Yarik"
+        },
+		"5d5e805d86f77439eb4c2d0e": {
+            "Description": "Glukhar",
+            "Name": "Glukhar",
+            "ShortName": "Glukhar"
+        },
+		"5fb52a3a1c69e5198e234118": {
+            "Description": "Cultist Priest",
+            "Name": "Cultist Priest",
+            "ShortName": "Cultist Priest"
+        },
+		"5d28b01486f77429242fc898": {
+            "Description": "Reshala",
+            "Name": "Reshala",
+            "ShortName": "Reshala"
+        },
+		"5e99767c86f7741ac7399393": {
+            "Description": "Sanitar",
+            "Name": "Sanitar",
+            "ShortName": "Sanitar"
+        },
+		"5d5f8ba486f77431254e7fd2": {
+            "Description": "Empty (Tagilla/Shturman)",
+            "Name": "Empty (Tagilla/Shturman)",
+            "ShortName": "Empty (Tagilla/Shturman)"
+        },
+		"5cc2e4d014c02e000d0115f8": {
+            "Description": "SCAV - Samogon",
+            "Name": "SCAV - Samogon",
+            "ShortName": "SCAV - Samogon"
+        },
+		"5f68c4c217d579077152a252": {
+            "Description": "SCAV - Mozg",
+            "Name": "SCAV - Mozg",
+            "ShortName": "SCAV - Mozg"
+        },
+		"5fc615460b735e7b024c76eb": {
+            "Description": "Reshala",
+            "Name": "Reshala",
+            "ShortName": "Reshala"
+        },
+		"5fb52a537b5d1342ee24bd57": {
+            "Description": "Cultist Warrior 2",
+            "Name": "Cultist Warrior 2",
+            "ShortName": "Cultist Warrior 2"
+        },
+		"5f68c4a7c174a17c0f4c8945": {
+            "Description": "SCAV - Kot",
+            "Name": "SCAV - Kot",
+            "ShortName": "SCAV - Kot"
+        },
+		"5cde9ff17d6c8b0474535daa": {
+            "Description": "SCAV - Tankist",
+            "Name": "SCAV - Tankist",
+            "ShortName": "SCAV - Tankist"
+        },
+		"5fc614130b735e7b024c76e4": {
+            "Description": "SCAV - Sanya",
+            "Name": "SCAV - Sanya",
+            "ShortName": "SCAV - Sanya"
+        },
+		"5fc613e10b735e7b024c76e3": {
+            "Description": "SCAV - Seva",
+            "Name": "SCAV - Seva",
+            "ShortName": "SCAV - Seva"
+        },
+		"5fc6155b0b735e7b024c76ec": {
+            "Description": "Glukhar",
+            "Name": "Glukhar",
+            "ShortName": "Glukhar"
+        }
+    },
+    "templates": {
+        "CultistBodySuit1": {
+            "Description": "",
+            "Name": "Cultist Priest Top",
+            "ShortName": ""
+        },
+		"CultistBodySuit2": {
+            "Description": "",
+            "Name": "Cultist Warrior Top",
+            "ShortName": ""
+        },
+		"CultistPantsSuit1": {
+            "Description": "",
+            "Name": "Cultist Pants 1",
+            "ShortName": ""
+        },
+		"CultistPantsSuit2": {
+            "Description": "",
+            "Name": "Cultist Pants 2",
+            "ShortName": ""
+        },
+		"TshitTatu_01_Suit": {
+            "Description": "",
+            "Name": "GUARD Black T-Shirt",
+            "ShortName": ""
+        },
+		"SecurityBody1": {
+            "Description": "",
+            "Name": "GUARD Police Jacket",
+            "ShortName": ""
+        },
+		"ShturmanBody": {
+            "Description": "",
+            "Name": "Shturman's Parka (WITH HEAD)",
+            "ShortName": ""
+        },
+		"WildFeet2": {
+            "Description": "",
+            "Name": "SCAV Gorka Pants",
+            "ShortName": ""
+        },
+		"SecurityBody2": {
+            "Description": "",
+            "Name": "GUARD Security Sweater",
+            "ShortName": ""
+        },
+		"RaidersFeet": {
+            "Description": "",
+            "Name": "RAIDER Pants",
+            "ShortName": ""
+        },
+		"RaidersBody": {
+            "Description": "",
+            "Name": "RAIDER Jacket",
+            "ShortName": ""
+        },
+		"ReshalaFeet": {
+            "Description": "",
+            "Name": "Reshala's Kryptek Pants",
+            "ShortName": ""
+        },
+		"ReshalaBody": {
+            "Description": "",
+            "Name": "Reshala's Leather Jacket",
+            "ShortName": ""
+        },
+		"Tshirt_Tatu02": {
+            "Description": "",
+            "Name": "GUARD Black T-Shit (With Tatoos)",
+            "ShortName": ""
+        },
+		"TopSecurity_Husky": {
+            "Description": "",
+            "Name": "GUARD Husky Hardshell Jacket",
+            "ShortName": ""
+        },
+		"SanitarTop": {
+            "Description": "",
+            "Name": "Sanitar's Medical Jacket",
+            "ShortName": ""
+        },
+		"SanitarFeet": {
+            "Description": "",
+            "Name": "Sanitar's Rain Boots",
+            "ShortName": ""
+        },
+		"SecurityGorka4_Top": {
+            "Description": "",
+            "Name": "GUARD Gorka 4 Top",
+            "ShortName": ""
+        },
+		"SecurityGorka4_Pants": {
+            "Description": "",
+            "Name": "GUARD Gorka 4 Pants",
+            "ShortName": ""
+        },
+		"Pants_FloraSecurity": {
+            "Description": "",
+            "Name": "GUARD Flora Pants",
+            "ShortName": ""
+        },
+		"ShturmanPants": {
+            "Description": "",
+            "Name": "Shturman's DPM Pants",
+            "ShortName": ""
+        },
+		"WildBody2_top": {
+            "Description": "",
+            "Name": "SCAV Raincoat",
+            "ShortName": ""
+        },
+		"WildBody3_top": {
+            "Description": "",
+            "Name": "SCAV Top (var. 2)",
+            "ShortName": ""
+        },
+		"SecurityPants": {
+            "Description": "",
+            "Name": "GUARD MVD Pants (Gray-Blue Kamysh)",
+            "ShortName": ""
+        },
+		"Gluhar_top": {
+            "Description": "",
+            "Name": "Glukhar's T-Shirt With PACA Top",
+            "ShortName": ""
+        },
+		"Gluhar_pants": {
+            "Description": "",
+            "Name": "Glukhar's Black Jeans",
+            "ShortName": ""
+        },
+		"wild_feet_scavelite_taclite": {
+            "Description": "",
+            "Name": "RAIDER Taclite Pro Ripstop Pants",
+            "ShortName": ""
+        },
+		"Tagilla_Top": {
+            "Description": "",
+            "Name": "Tagilla's Mainly Chest (WITH HEAD)",
+            "ShortName": ""
+        },
+		"Tagilla_Pants": {
+            "Description": "",
+            "Name": "Tagilla's Crye G3 Combat Pants (Multicam Black)",
+            "ShortName": ""
+        },
+		"5cdea30c7d6c8b04737c2d15": {
+            "Description": "",
+            "Name": "SCAV Military Pants",
+            "ShortName": ""
+        },
+		"5cdea3197d6c8b20b577f017": {
+            "Description": "",
+            "Name": "SCAV Jacket",
+            "ShortName": ""
+        },
+		"5cdea23c7d6c8b04723cf47b": {
+            "Description": "",
+            "Name": "SCAV Top (var. 1)",
+            "ShortName": ""
+        },
+		"5cdea20c7d6c8b0474535dab": {
+            "Description": "",
+            "Name": "SCAV Jeans",
+            "ShortName": ""
+        }
+    }
+}

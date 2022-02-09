@@ -1,0 +1,7 @@
+{
+    "name": "Sell Scav Suits",
+    "author": "JustNU, Senko, Ereshkigal, Baliston",
+    "version": "1.0.0",
+    "license": "NCSA",
+    "main": "package.js"
+}
