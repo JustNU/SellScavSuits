@@ -3,5 +3,6 @@
     "author": "JustNU, Senko, Ereshkigal, Baliston",
     "version": "1.0.0",
     "license": "NCSA",
-    "main": "package.js"
+    "main": "package.js",
+	"akiVestion": "2.2.*"
 }

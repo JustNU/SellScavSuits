@@ -107,169 +107,219 @@
         }
     },
     "templates": {
-        "CultistBodySuit1": {
+        "top_cultist_01_suite": {
             "Description": "",
             "Name": "Cultist Priest Top",
             "ShortName": ""
         },
-		"CultistBodySuit2": {
+		"top_cultist_02_suite": {
             "Description": "",
             "Name": "Cultist Warrior Top",
             "ShortName": ""
         },
-		"CultistPantsSuit1": {
+		"pants_cultist_01_suite": {
             "Description": "",
             "Name": "Cultist Pants 1",
             "ShortName": ""
         },
-		"CultistPantsSuit2": {
+		"pants_cultist_02_suite": {
             "Description": "",
             "Name": "Cultist Pants 2",
             "ShortName": ""
         },
-		"TshitTatu_01_Suit": {
+		"Tshirt_security_TshirtTatu_01_suite": {
             "Description": "",
             "Name": "GUARD Black T-Shirt",
             "ShortName": ""
         },
-		"SecurityBody1": {
+		"wild_security_body_1_suite": {
             "Description": "",
             "Name": "GUARD Police Jacket",
             "ShortName": ""
         },
-		"ShturmanBody": {
+		"wild_Shturman_body_suite": {
             "Description": "",
             "Name": "Shturman's Parka (WITH HEAD)",
             "ShortName": ""
         },
-		"WildFeet2": {
+		"wild_feet_2_suite": {
             "Description": "",
             "Name": "SCAV Gorka Pants",
             "ShortName": ""
         },
-		"SecurityBody2": {
+		"wild_security_body_2_suite": {
             "Description": "",
             "Name": "GUARD Security Sweater",
             "ShortName": ""
         },
-		"RaidersFeet": {
+		"wild_pmcBot_feet_suite": {
             "Description": "",
             "Name": "RAIDER Pants",
             "ShortName": ""
         },
-		"RaidersBody": {
+		"wild_pmcBot_body_suite": {
             "Description": "",
             "Name": "RAIDER Jacket",
             "ShortName": ""
         },
-		"ReshalaFeet": {
+		"Wild_Dealmaker_feet_suite": {
             "Description": "",
             "Name": "Reshala's Kryptek Pants",
             "ShortName": ""
         },
-		"ReshalaBody": {
+		"Wild_Dealmaker_body_suite": {
             "Description": "",
             "Name": "Reshala's Leather Jacket",
             "ShortName": ""
         },
-		"Tshirt_Tatu02": {
+		"Tshirt_security_TshirtTatu_02_suite": {
             "Description": "",
             "Name": "GUARD Black T-Shit (With Tatoos)",
             "ShortName": ""
         },
-		"TopSecurity_Husky": {
+		"Top_security_Husky_suite": {
             "Description": "",
             "Name": "GUARD Husky Hardshell Jacket",
             "ShortName": ""
         },
-		"SanitarTop": {
+		"Top_BOSS_Sanitar_suite": {
             "Description": "",
             "Name": "Sanitar's Medical Jacket",
             "ShortName": ""
         },
-		"SanitarFeet": {
+		"Pants_BOSS_Sanitar_suite": {
             "Description": "",
             "Name": "Sanitar's Rain Boots",
             "ShortName": ""
         },
-		"SecurityGorka4_Top": {
+		"Top_security_Gorka4_suite": {
             "Description": "",
             "Name": "GUARD Gorka 4 Top",
             "ShortName": ""
         },
-		"SecurityGorka4_Pants": {
+		"Pants_security_Gorka4_suite": {
             "Description": "",
             "Name": "GUARD Gorka 4 Pants",
             "ShortName": ""
         },
-		"Pants_FloraSecurity": {
+		"Pants_security_Flora_suite": {
             "Description": "",
             "Name": "GUARD Flora Pants",
             "ShortName": ""
         },
-		"ShturmanPants": {
+		"Pants_BOSS_Shturman_suite": {
             "Description": "",
             "Name": "Shturman's DPM Pants",
             "ShortName": ""
         },
-		"WildBody2_top": {
+		"wild_body_2_suite": {
             "Description": "",
             "Name": "SCAV Raincoat",
             "ShortName": ""
         },
-		"WildBody3_top": {
+		"wild_body_3_suite": {
             "Description": "",
             "Name": "SCAV Top (var. 2)",
             "ShortName": ""
         },
-		"SecurityPants": {
+		"wild_security_feet_1_suite": {
             "Description": "",
             "Name": "GUARD MVD Pants (Gray-Blue Kamysh)",
             "ShortName": ""
         },
-		"Gluhar_top": {
+		"wild_Gluhar_body_suite": {
             "Description": "",
             "Name": "Glukhar's T-Shirt With PACA Top",
             "ShortName": ""
         },
-		"Gluhar_pants": {
+		"Pants_BOSS_Glukhar_suite": {
             "Description": "",
             "Name": "Glukhar's Black Jeans",
             "ShortName": ""
         },
-		"wild_feet_scavelite_taclite": {
+		"wild_feet_scavelite_taclite_suite": {
             "Description": "",
             "Name": "RAIDER Taclite Pro Ripstop Pants",
             "ShortName": ""
         },
-		"Tagilla_Top": {
+		"top_boss_tagilla_suite": {
             "Description": "",
             "Name": "Tagilla's Mainly Chest (WITH HEAD)",
             "ShortName": ""
         },
-		"Tagilla_Pants": {
+		"pants_boss_tagilla_suite": {
             "Description": "",
             "Name": "Tagilla's Crye G3 Combat Pants (Multicam Black)",
             "ShortName": ""
         },
-		"5cdea30c7d6c8b04737c2d15": {
+		"wild_feet_1_suite": {
             "Description": "",
             "Name": "SCAV Military Pants",
             "ShortName": ""
         },
-		"5cdea3197d6c8b20b577f017": {
+		"wild_body_1_suite": {
             "Description": "",
             "Name": "SCAV Jacket",
             "ShortName": ""
         },
-		"5cdea23c7d6c8b04723cf47b": {
+		"wild_body_suite": {
             "Description": "",
             "Name": "SCAV Top (var. 1)",
             "ShortName": ""
         },
-		"5cdea20c7d6c8b0474535dab": {
+		"wild_feet_suite": {
             "Description": "",
             "Name": "SCAV Jeans",
+            "ShortName": ""
+        },
+		"wild_feet_slimPants_suite": {
+            "Description": "",
+            "Name": "SCAV Drystch Pants",
+            "ShortName": ""
+        },
+		"wild_feet_sweatpants_suite": {
+            "Description": "",
+            "Name": "SCAV Rain Boots",
+            "ShortName": ""
+        },
+		"wild_feet_wasatch_suite": {
+            "Description": "",
+            "Name": "SCAV Browning Wasatch Pants",
+            "ShortName": ""
+        },
+		"Wild_Killa_feet_suite": {
+            "Description": "",
+            "Name": "Adik Tracksuit Pants",
+            "ShortName": ""
+        },
+		"wild_body_motocross_suite": {
+            "Description": "",
+            "Name": "SCAV Motocross Jacket",
+            "ShortName": ""
+        },
+		"scav_kit_upper_meteor_suite": {
+            "Description": "",
+            "Name": "SCAV Meteor Jacket",
+            "ShortName": ""
+        },
+		"wild_body_russia1_suite": {
+            "Description": "",
+            "Name": "SCAV Russia Jacket",
+            "ShortName": ""
+        },
+		"scav_kit_lower_sklon_suite": {
+            "Description": "",
+            "Name": "SCAV Sklon Pants",
+            "ShortName": ""
+        },
+		"wild_body_underarmour_suite": {
+            "Description": "",
+            "Name": "SCAV Under Armour Jacket",
+            "ShortName": ""
+        },
+		"wild_body_rainparka_suite": {
+            "Description": "",
+            "Name": "SCAV Rain Parka",
             "ShortName": ""
         }
     }

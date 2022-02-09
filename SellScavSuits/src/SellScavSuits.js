@@ -4,53 +4,103 @@ class SellScavSuits
 {
 	static onLoadMod()
 	{
-		// read files
-		const scavSuitCustomization = JsonUtil.deserialize(VFS.readFile(`user/mods/SellScavSuits/db/customization.json`));
-		const scavSuitOffers = JsonUtil.deserialize(VFS.readFile(`user/mods/SellScavSuits/db/suitoffers.json`));
-		const scavSuitLocale = JsonUtil.deserialize(VFS.readFile(`user/mods/SellScavSuits/db/locale.json`));
+		const config = require("../config/config.json");
+		var suitesList = [];
+		var skipThoseSuites = ["wild_Killa_body"]
 		
-		// add missing suits
-		const customization = JsonUtil.clone(DatabaseServer.tables.templates.customization);
-		DatabaseServer.tables.templates.customization = {
-			...customization,
-			...scavSuitCustomization
-		};
-		
-		// change sides for existing scav customization
-		for (const customizationId in DatabaseServer.tables.templates.customization) {
-			if (DatabaseServer.tables.templates.customization[customizationId]._props.Side) {
-				if (DatabaseServer.tables.templates.customization[customizationId]._props.Side[0] === "Savage") {
-					DatabaseServer.tables.templates.customization[customizationId]._props.Side = ["Usec", "Bear", "Savage"];
-				}
+        for (var top in DatabaseServer.tables.globals.config.Customization.SavageBody) {
+			// skip clothing
+			if (SellScavSuits.skipScavClothing(top, skipThoseSuites) === true) {
+				continue;
 			}
-		}
+			
+            var newSuite = 
+            {
+                _id: top + "_suite",
+                _name: top,
+                _parent: "5cd944ca1388ce03a44dc2a4",
+                _type: "Item",
+                _props: {
+                    Name: top,
+                    ShortName: top,
+                    Description: top,
+                    Side: ["Usec","Bear","Savage"],
+                    AvailableAsDefault: false,
+                    Body: DatabaseServer.tables.globals.config.Customization.SavageBody[top].body,
+                    Hands: DatabaseServer.tables.globals.config.Customization.SavageBody[top].hands                   
+                }
+            };
+			
+            suitesList.push(newSuite);
+        }
+
+        for (var lower in DatabaseServer.tables.globals.config.Customization.SavageFeet) {
+			// skip clothing
+			if (SellScavSuits.skipScavClothing(top, skipThoseSuites) === true) {
+				continue;
+			}
+			
+            var newSuite = 
+            {
+                _id: lower + "_suite",
+                _name: lower,
+                _parent: "5cd944d01388ce000a659df9",
+                _type: "Item",
+                _props: {
+                    Name: lower,
+                    ShortName: lower,
+                    Description: lower,
+                    Side: ["Usec","Bear","Savage"],
+                    AvailableAsDefault: false,
+                    Feet: DatabaseServer.tables.globals.config.Customization.SavageFeet[lower].feet
+                }
+            };
+
+            suitesList.push(newSuite);
+        }
+
+        // add suits to customization/fence
+		let fenceOffers = [];
+        for (var suit in suitesList) {
+            let newTraderOffer = 
+            {
+                _id: suitesList[suit]._name+"_Offer",
+                tid: "579dc571d53a0658a154fbec",
+                suiteId: suitesList[suit]._id,
+                isActive: true,
+                requirements: {
+                    loyaltyLevel: 0,
+                    profileLevel: 0,
+                    standing: 0,
+                    skillRequirements: [],
+                    questRequirements: [],
+                    itemRequirements: []
+                }
+            };
+
+            fenceOffers.push(newTraderOffer) ;
+
+            //add custom suit in templates.customization        
+            DatabaseServer.tables.templates.customization[suitesList[suit]._id] = suitesList[suit];
+        }
 		
-		// check if fence can sell clothing, if not then allow it
+        // check if fence can sell clothing, if not then allow it
 		if (DatabaseServer.tables.traders["579dc571d53a0658a154fbec"].suits) {
 			const suits = JsonUtil.clone(DatabaseServer.tables.traders["579dc571d53a0658a154fbec"].suits);
 			DatabaseServer.tables.traders["579dc571d53a0658a154fbec"].suits = {
 				...suits,
-				...scavSuitOffers
-			}
+				...fenceOffers
+			};
 		} else {
 			DatabaseServer.tables.traders["579dc571d53a0658a154fbec"].base.customization_seller = true;
-			DatabaseServer.tables.traders["579dc571d53a0658a154fbec"].suits = scavSuitOffers
+			DatabaseServer.tables.traders["579dc571d53a0658a154fbec"].suits = fenceOffers
 		}
 		
 		//locale
+		const scavSuitLocale = JsonUtil.deserialize(VFS.readFile(`user/mods/SellScavSuits/db/locale.json`));
 		for (const localeID in DatabaseServer.tables.locales.global)
         {
 			// change existing locale
-			DatabaseServer.tables.locales.global[localeID].templates["5f5f653179db6e3f0e19b762"].Name = "SCAV Drystch Pants";
-			DatabaseServer.tables.locales.global[localeID].templates["5f5f64f947344c2e4f6c431e"].Name = "SCAV Rain Boots";
-			DatabaseServer.tables.locales.global[localeID].templates["5f5f65180bc58666c37e784a"].Name = "SCAV Browning Wasatch Pants";
-			DatabaseServer.tables.locales.global[localeID].templates["5cdea3f87d6c8b647a3769b2"].Name = "Adik Tracksuit Pants";
-			DatabaseServer.tables.locales.global[localeID].templates["5e9de109f6164249e54453d2"].Name = "SCAV Motocross Jacket";
-			DatabaseServer.tables.locales.global[localeID].templates["5df8e65d86f77412672a1e46"].Name = "SCAV Meteor Jacket";
-			DatabaseServer.tables.locales.global[localeID].templates["5e4bb8e686f77406796b7ba2"].Name = "SCAV Russia Jacket";
-			DatabaseServer.tables.locales.global[localeID].templates["5df8e79286f7744a122d6836"].Name = "SCAV Sklon Pants";
-			DatabaseServer.tables.locales.global[localeID].templates["5fd791b71189a17bcc172f16"].Name = "SCAV Under Armour Jacket";
-			DatabaseServer.tables.locales.global[localeID].templates["5fd7910ae3bfcf6cab4c9f55"].Name = "SCAV Rain Parka";
 			DatabaseServer.tables.locales.global[localeID].customization["5fc615710b735e7b024c76ed"].Name = "Sanitar";
 			
 			// add suit locale
@@ -66,11 +116,37 @@ class SellScavSuits
 			...localeCustomization,
 			...scavSuitLocale.customization
 			};
-			
-			// BRING BACK THE CIG SCAV
-			DatabaseServer.tables.templates.customization["5d28afe786f774292668618d"]._props.Prefab.path = "assets/content/characters/character/prefabs/wild_head_3.bundle";
         }
 		
+		// BRING BACK THE CIG SCAV
+		DatabaseServer.tables.templates.customization["5d28afe786f774292668618d"]._props.Prefab.path = "assets/content/characters/character/prefabs/wild_head_3.bundle";
+		
+		// config options
+		for (const customizationItem in DatabaseServer.tables.templates.customization) {
+			if (config.AddScavVoices) {
+				if (DatabaseServer.tables.templates.customization[customizationItem]._parent === "5cc085e214c02e000c6bea67" && DatabaseServer.tables.templates.customization[customizationItem]._props.Side[0] === "Savage") {
+					DatabaseServer.tables.templates.customization[customizationItem]._props.Side = ["Usec","Bear","Savage"];
+				}
+			};
+			
+			if (config.AddScavHeads) {
+				if (DatabaseServer.tables.templates.customization[customizationItem]._parent === "5fc100cf95572123ae738483" && DatabaseServer.tables.templates.customization[customizationItem]._props.Side[0] === "Savage") {
+					DatabaseServer.tables.templates.customization[customizationItem]._props.Side = ["Usec","Bear","Savage"];
+				}
+			};
+		}
+	}
+	
+	static skipScavClothing(globalsClothing, skipList)
+	{
+		// skip some clothes
+		for (const skipClothingIndex in skipList) {
+			const skipClothing = skipList[skipClothingIndex]
+			
+			if (globalsClothing === skipClothing) {
+				return true;
+			}
+		}
 	}
 	
 }
